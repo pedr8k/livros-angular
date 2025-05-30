@@ -1,59 +1,68 @@
-# LivrosAngular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+# livros-angular
 
-## Development server
+Projeto Angular para gerenciamento de livros, com funcionalidades de listagem e cadastro.
 
-To start a local development server, run:
+## Descrição
+
+Este projeto é uma aplicação web construída com Angular, que permite listar livros, adicionar novos registros e gerenciar editoras e autores. Foi desenvolvido como parte do estudo e prática do framework Angular.
+
+## Funcionalidades
+
+- Listar livros cadastrados
+- Cadastrar novos livros com título, resumo, autores e editora
+- Navegação entre as páginas usando Angular Router
+- Formulário com validação básica usando Angular Forms
+- Uso de serviços para controle dos dados (editoras e livros)
+
+## Tecnologias Utilizadas
+
+- Angular
+- TypeScript
+- Bootstrap (para estilização)
+- Git e GitHub para controle de versão
+
+## Como rodar o projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/pedr8k/livros-angular.git
+```
+
+2. Entre na pasta do projeto:
+
+```bash
+cd livros-angular
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute a aplicação:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+5. Acesse no navegador:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Estrutura do projeto
 
-```bash
-ng generate --help
-```
+- `src/app/livro-lista.component.ts` - Componente para listar livros
+- `src/app/livro-dados.component.ts` - Componente para cadastro e edição de livros
+- `src/app/controle-editora.service.ts` - Serviço para gerenciamento das editoras
+- `src/app/controle-livros.service.ts` - Serviço para gerenciamento dos livros
+- `src/app/app-routing.module.ts` - Configuração de rotas
+- `src/app/app.module.ts` - Módulo principal da aplicação
 
-## Building
+## Contribuição
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
