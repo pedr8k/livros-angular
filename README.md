@@ -63,6 +63,3 @@ http://localhost:4200
 - `src/app/app-routing.module.ts` - Configuração de rotas
 - `src/app/app.module.ts` - Módulo principal da aplicação
 
-## Contribuição
-
-Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
