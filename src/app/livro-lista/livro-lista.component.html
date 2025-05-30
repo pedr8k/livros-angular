@@ -1,0 +1,29 @@
+<main class="container mt-4">
+  <h2>Catálogo de Livros</h2>
+
+  <button class="btn btn-success mb-3" routerLink="/dados">Adicionar Livro</button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Título</th>
+        <th>Editora</th>
+        <th>Autores</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let livro of livros">
+        <td>{{ livro.codLivro }}</td>
+        <td>{{ livro.titulo }}</td>
+        <td>{{ getNomeEditora(livro.codEditora) }}</td>
+        <td>{{ livro.autores.join(', ') }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm me-2" [routerLink]="['/dados', livro.codLivro]">Editar</button>
+          <button class="btn btn-danger btn-sm" (click)="excluir(livro.codLivro)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
